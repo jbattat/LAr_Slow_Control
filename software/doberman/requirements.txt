@@ -1,0 +1,6 @@
+pyserial==3.4
+pymongo
+psutil
+requests
+python-dateutil
+zmq
