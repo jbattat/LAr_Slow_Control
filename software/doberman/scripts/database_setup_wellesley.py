@@ -238,7 +238,7 @@ db.sensors.insert_many([
         "status" : "online",
         "topic" : "temperature",
         "subsystem" : "purifier",
-        "readout_interval" : 5,
+        "readout_interval" : 10,
         "alarm_recurrence" : 3,
         "alarm_thresholds" : [25, 1000],
         "alarm_level" : 0,
@@ -246,7 +246,7 @@ db.sensors.insert_many([
         "pipelines" : [],
         "device" : "Waveshare5",
         "value_xform" : [0,1], # no scaling
-        "readout_command" : 'MEAS?7;MEAS?8;', #request one reading                                           
+        "readout_command" : 'MEAS?7;MEAS?8;', #request one reading
         "multi_sensor": ["temp1", "temp2"]
     },
         {
@@ -256,7 +256,7 @@ db.sensors.insert_many([
         "status" : "online",
         "topic" : "temperature",
         "subsystem" : "purifier",
-        "readout_interval" : 5,
+        "readout_interval" : 10,
         "alarm_recurrence" : 3,
         "alarm_thresholds" : [25, 1000],
         "alarm_level" : 0,
@@ -264,7 +264,7 @@ db.sensors.insert_many([
         "pipelines" : [],
         "device" : "Waveshare5",
         "value_xform" : [0,1], # no scaling
-        "readout_command" : 'MEAS?7;MEAS?8;', #request one reading                                           
+        "readout_command" : 'MEAS?7;', #request one reading
         "multi_sensor": ["temp1"]
         }
 ])
